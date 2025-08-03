@@ -2,6 +2,7 @@
 #include "ui_stageseledialog.h"
 
 #include <QToolButton>
+#include <QRegularExpression>
 
 #include "VirtualStageEmb.h"
 #include "listdialog.h"
@@ -102,7 +103,7 @@ void StageSeleDialog::LoadPage(int page)
     if (page >= GetNumPages())
         return;
 
-    QList<QToolButton *> buttons = this->findChildren<QToolButton *>(QRegExp("ssbutton", Qt::CaseSensitive, QRegExp::Wildcard));
+    QList<QToolButton *> buttons = this->findChildren<QToolButton *>(QRegularExpression("ssbutton", QRegularExpression::CaseInsensitiveOption));
     if (buttons.size() != PAGE_SIZE)
     {
         UPRINTF("Internal error");

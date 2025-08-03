@@ -5,6 +5,7 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QLabel>
+#include <QRegularExpression>
 
 #include "Config.h"
 #include "IniFile.h"
@@ -618,7 +619,7 @@ QString Config::GetDirectory(const QString &file)
     if (file.isEmpty())
         return QString();
 
-    int i = file.lastIndexOf(QRegExp("[/\\\\]+"));
+    int i = file.lastIndexOf(QRegularExpression("[/\\\\]+"));
     if (i == -1)
         return file;
 

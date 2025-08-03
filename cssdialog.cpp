@@ -164,7 +164,7 @@ void CssDialog::PopulateSlots(const std::vector<CharaListSlot> &c_slots, CssMode
 
     for (QAction *action : actions)
     {
-        if (action->property("action_type") >= CSS_COSTUME)
+        if (action->property("action_type").toInt() >= CSS_COSTUME)
         {
             action->deleteLater();
         }
