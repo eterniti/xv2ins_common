@@ -26,7 +26,7 @@ static bool IsOldStyleCus()
     if (!xv2fs->LoadFile(&cus, "data/system/custom_skill.cus"))
         return false;
 
-    return (cus.GetVersion() < 121);
+    return (cus.GetVersion() < 125);
 }
 
 static bool NeedsUpdate()
