@@ -735,7 +735,8 @@ static bool GetPatcherVersion(const std::string &file, float *version, bool warn
     }
     else
     {
-        *version = 0.0f;
+       *version = 0.0f;
+        return false;
     }
 
     return true;

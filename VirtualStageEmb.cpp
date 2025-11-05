@@ -40,7 +40,8 @@ static const std::vector<std::string> original_stages =
     "BFtwf",
     "BFpot",
     "BFvol",
-    "BFrrg"
+    "BFrrg",
+    "BFlbh",
 };
 
 #define WIDTH       240
