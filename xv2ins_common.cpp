@@ -19,19 +19,19 @@
 
 #define GAME_CST_FILE   "data/system/chara_select_table.cst"
 
-static bool IsOldStyleCus()
+static bool IsOldStyleIdb()
 {
-    CusFile cus;
+    IdbFile idb;
 
-    if (!xv2fs->LoadFile(&cus, "data/system/custom_skill.cus"))
+    if (!xv2fs->LoadFile(&idb, "data/system/item/skill_item.idb"))
         return false;
 
-    return (cus.GetVersion() < 125);
+    return (idb.GetVersion() < 126);
 }
 
 static bool NeedsUpdate()
 {
-    return IsOldStyleCus();
+    return IsOldStyleIdb();
 }
 
 static uint8_t *ReadResourceFile(const char *path, size_t *size)

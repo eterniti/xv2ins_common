@@ -325,6 +325,11 @@
      <string>Dlc_20</string>
     </property>
    </item>
+   <item>
+    <property name="text">
+     <string>Dlc_21</string>
+    </property>
+   </item>
   </widget>
   <widget class="QCheckBox" name="cgk2Check">
    <property name="geometry">
