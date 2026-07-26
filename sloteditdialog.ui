@@ -344,6 +344,19 @@
     <string>Flag CGK2</string>
    </property>
   </widget>
+  <widget class="QCheckBox" name="kfkCheck">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>190</y>
+     <width>75</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Flag KFK</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections>

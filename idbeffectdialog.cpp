@@ -131,7 +131,8 @@ void IdbEffectDialog::EffectToGui()
     ui->u50Edit->setText(QString("%1").arg((int32_t)effect.unk_48[2]));
     ui->u54Edit->setText(QString("%1").arg((int32_t)effect.unk_48[3]));
     ui->u58Edit->setText(QString("%1").arg((int32_t)effect.unk_48[4]));
-    ui->u5CEdit->setText(QString("%1").arg((int32_t)effect.unk_48[5]));
+    ui->u5CEdit->setText(QString("%1").arg((int32_t)effect.unk_48[6]));
+    ui->nu68Edit->setText(QString("%1").arg((int32_t)effect.unk_48[5]));
 
     ui->heaEdit->setText(QString("%1").arg(effect.hea));
     ui->kiEdit->setText(QString("%1").arg(effect.ki));
@@ -204,7 +205,8 @@ void IdbEffectDialog::GuiToEffect()
     effect.unk_48[2] = (uint32_t) ui->u50Edit->text().toInt();
     effect.unk_48[3] = (uint32_t) ui->u54Edit->text().toInt();
     effect.unk_48[4] = (uint32_t) ui->u58Edit->text().toInt();
-    effect.unk_48[5] = (uint32_t) ui->u5CEdit->text().toInt();
+    effect.unk_48[6] = (uint32_t) ui->u5CEdit->text().toInt();
+    effect.unk_48[5] = (uint32_t) ui->nu68Edit->text().toInt();
 
     effect.hea = ui->heaEdit->text().toFloat();
     effect.ki = ui->kiEdit->text().toFloat();
