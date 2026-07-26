@@ -8,7 +8,7 @@
 #define PROGRAM_NAME_STAGECREAT "XV2 Stage Creator"
 #define PROGRAM_NAME_QUESTCREAT "XV2 Quest Creator"
 #define PROGRAM_NAME_SSCREAT "XV2 Super Soul Creator"
-#define PROGRAM_VERSION "4.6"
+#define PROGRAM_VERSION "4.7"
 
 #define INSTALLED_MODS_PATH_LEGACY "XV2INS/Installed"
 #define INSTALLED_MODS_PATH_NEW     "data/InstallData"
